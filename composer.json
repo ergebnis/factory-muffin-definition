@@ -1,0 +1,36 @@
+{
+  "name": "localheinz/factory-muffin-definition",
+  "description": "Provides an interface for, and an easy way to find and register entity definitions for league/factory-muffin.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Möller",
+      "email": "am@localheinz.com"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {
+    "codeclimate/php-test-reporter": "0.4.4",
+    "localheinz/php-cs-fixer-config": "~1.5.1",
+    "localheinz/test-util": "0.2.1",
+    "phpunit/phpunit": "^6.2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Localheinz\\FactoryMuffin\\Definition\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Localheinz\\FactoryMuffin\\Definition\\Test\\": "test/"
+    }
+  }
+}
