@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Localheinz\FactoryMuffin\Definition\Test\Unit;
 
+use Localheinz\FactoryMuffin\Definition\Test\Fixture;
 use Localheinz\Test\Util\Helper;
 use PHPUnit\Framework;
 
@@ -30,12 +31,14 @@ final class ProjectCodeTest extends Framework\TestCase
         $this->assertClassesHaveTests(
             __DIR__ . '/../../src',
             'Localheinz\\FactoryMuffin\\Definition\\',
-            'Localheinz\\FactoryMuffin\\Definition\\Test\\Unit\\'
+            'Localheinz\\FactoryMuffin\\Definition\\Test\\Unit'
         );
     }
 
     public function testTestClassesAreAbstractOrFinal()
     {
-        $this->assertClassesAreAbstractOrFinal(__DIR__ . '/..');
+        $this->assertClassesAreAbstractOrFinal(__DIR__ . '/..', [
+            Fixture\Definition\CanNotBeAutoloaded\MaybeUserDefinition::class,
+        ]);
     }
 }
