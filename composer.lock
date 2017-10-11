@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f94fb813c9f2e506139fa960be7c5df",
+    "content-hash": "972f6e640df5c0c4ca66705c135f2837",
     "packages": [
         {
             "name": "zendframework/zend-file",
@@ -739,6 +739,49 @@
             "time": "2016-05-13T10:56:41+00:00"
         },
         {
+            "name": "localheinz/classy",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/localheinz/classy.git",
+                "reference": "165395d7e62bc49cf8c8bdd6d4e452fa367dbb31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/localheinz/classy/zipball/165395d7e62bc49cf8c8bdd6d4e452fa367dbb31",
+                "reference": "165395d7e62bc49cf8c8bdd6d4e452fa367dbb31",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.4.4",
+                "localheinz/php-cs-fixer-config": "~1.6.2",
+                "localheinz/test-util": "0.2.2",
+                "phpbench/phpbench": "0.13.0",
+                "phpunit/phpunit": "^6.4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Localheinz\\Classy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Möller",
+                    "email": "am@localheinz.com"
+                }
+            ],
+            "description": "Provides a way to collect classy constructs from source or a directory.",
+            "time": "2017-10-10T06:43:55+00:00"
+        },
+        {
             "name": "localheinz/php-cs-fixer-config",
             "version": "1.6.2",
             "source": {
@@ -781,27 +824,27 @@
         },
         {
             "name": "localheinz/test-util",
-            "version": "0.2.1",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/test-util.git",
-                "reference": "60a8a05b0e5fbe3a3ad350979d593c3f7baa8437"
+                "reference": "9b7515305250fba79ac7351448d4327be0b10c11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/test-util/zipball/60a8a05b0e5fbe3a3ad350979d593c3f7baa8437",
-                "reference": "60a8a05b0e5fbe3a3ad350979d593c3f7baa8437",
+                "url": "https://api.github.com/repos/localheinz/test-util/zipball/9b7515305250fba79ac7351448d4327be0b10c11",
+                "reference": "9b7515305250fba79ac7351448d4327be0b10c11",
                 "shasum": ""
             },
             "require": {
-                "fzaninotto/faker": "^1.0.0",
-                "php": "^7.0",
-                "zendframework/zend-file": "^2.7.1"
+                "fzaninotto/faker": "^1.7.1",
+                "localheinz/classy": "0.2.0",
+                "php": "^7.0"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "0.4.4",
-                "localheinz/php-cs-fixer-config": "~1.5.1",
-                "phpunit/phpunit": "^6.2.4"
+                "localheinz/php-cs-fixer-config": "~1.6.2",
+                "phpunit/phpunit": "^6.3.1"
             },
             "type": "library",
             "autoload": {
@@ -826,7 +869,7 @@
                 "phpunit",
                 "test"
             ],
-            "time": "2017-09-19T11:36:23+00:00"
+            "time": "2017-10-10T06:54:57+00:00"
         },
         {
             "name": "myclabs/deep-copy",
