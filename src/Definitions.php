@@ -52,10 +52,6 @@ final class Definitions
 
         foreach ($files as $file) {
             foreach ($file->getClasses() as $className) {
-                if (\class_exists($className)) {
-                    $foo = 9000;
-                }
-
                 try {
                     $reflection = new \ReflectionClass($className);
                 } catch (\ReflectionException $exception) {
