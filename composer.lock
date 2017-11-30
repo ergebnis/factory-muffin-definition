@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0dfbe4c0cb2741e4ae236a5a6eff65e2",
+    "content-hash": "0f10a76ed26430821a6a5a8cc2a78899",
     "packages": [
         {
             "name": "localheinz/classy",
