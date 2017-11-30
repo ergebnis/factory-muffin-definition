@@ -1,9 +1,7 @@
 # factory-muffin-definition
 
 [![Build Status](https://travis-ci.org/localheinz/factory-muffin-definition.svg?branch=master)](https://travis-ci.org/localheinz/factory-muffin-definition)
-[![Code Climate](https://codeclimate.com/github/localheinz/factory-muffin-definition/badges/gpa.svg)](https://codeclimate.com/github/localheinz/factory-muffin-definition)
-[![Test Coverage](https://codeclimate.com/github/localheinz/factory-muffin-definition/badges/coverage.svg)](https://codeclimate.com/github/localheinz/factory-muffin-definition/coverage)
-[![Issue Count](https://codeclimate.com/github/localheinz/factory-muffin-definition/badges/issue_count.svg)](https://codeclimate.com/github/localheinz/factory-muffin-definition)
+[![codecov](https://codecov.io/gh/localheinz/factory-muffin-definition/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/factory-muffin-definition)[![Code Climate](https://codeclimate.com/github/localheinz/factory-muffin-definition/badges/gpa.svg)](https://codeclimate.com/github/localheinz/factory-muffin-definition)
 [![Latest Stable Version](https://poser.pugx.org/localheinz/factory-muffin-definition/v/stable)](https://packagist.org/packages/localheinz/factory-muffin-definition)
 [![Total Downloads](https://poser.pugx.org/localheinz/factory-muffin-definition/downloads)](https://packagist.org/packages/localheinz/factory-muffin-definition)
 
