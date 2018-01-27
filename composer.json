@@ -2,6 +2,7 @@
   "name": "localheinz/factory-muffin-definition",
   "type": "library",
   "description": "Provides an interface for, and an easy way to find and register entity definitions for league/factory-muffin.",
+  "homepage": "https://github.com/localheinz/factory-muffin-definition",
   "license": "MIT",
   "authors": [
     {
@@ -33,5 +34,9 @@
     "psr-4": {
       "Localheinz\\FactoryMuffin\\Definition\\Test\\": "test/"
     }
+  },
+  "support": {
+    "issues": "https://github.com/localheinz/factory-muffin-definition/issues",
+    "source": "https://github.com/localheinz/factory-muffin-definition"
   }
 }
