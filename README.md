@@ -1,6 +1,6 @@
 # factory-muffin-definition
 
-[![Build Status](https://travis-ci.org/localheinz/factory-muffin-definition.svg?branch=master)](https://travis-ci.org/localheinz/factory-muffin-definition)
+[![Build Status](https://travis-ci.com/localheinz/factory-muffin-definition.svg?branch=master)](https://travis-ci.com/localheinz/factory-muffin-definition)
 [![codecov](https://codecov.io/gh/localheinz/factory-muffin-definition/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/factory-muffin-definition)
 [![Latest Stable Version](https://poser.pugx.org/localheinz/factory-muffin-definition/v/stable)](https://packagist.org/packages/localheinz/factory-muffin-definition)
 [![Total Downloads](https://poser.pugx.org/localheinz/factory-muffin-definition/downloads)](https://packagist.org/packages/localheinz/factory-muffin-definition)
