@@ -19,6 +19,9 @@ use Localheinz\FactoryMuffin\Definition\Exception;
 use Localheinz\Test\Util\Helper;
 use PHPUnit\Framework;
 
+/**
+ * @internal
+ */
 final class DefinitionsTest extends Framework\TestCase
 {
     use Helper;
@@ -35,8 +38,8 @@ final class DefinitionsTest extends Framework\TestCase
         $factoryMuffin = $this->createFactoryMuffinMock();
 
         $factoryMuffin
-            ->expects($this->never())
-            ->method($this->anything());
+            ->expects(self::never())
+            ->method(self::anything());
 
         Definitions::in(__DIR__ . '/../Fixture/Definition/CanNotBeAutoloaded')->registerWith($factoryMuffin);
     }
@@ -46,8 +49,8 @@ final class DefinitionsTest extends Framework\TestCase
         $factoryMuffin = $this->createFactoryMuffinMock();
 
         $factoryMuffin
-            ->expects($this->never())
-            ->method($this->anything());
+            ->expects(self::never())
+            ->method(self::anything());
 
         Definitions::in(__DIR__ . '/../Fixture/Definition/DoesNotImplementInterface')->registerWith($factoryMuffin);
     }
@@ -57,8 +60,8 @@ final class DefinitionsTest extends Framework\TestCase
         $factoryMuffin = $this->createFactoryMuffinMock();
 
         $factoryMuffin
-            ->expects($this->never())
-            ->method($this->anything());
+            ->expects(self::never())
+            ->method(self::anything());
 
         Definitions::in(__DIR__ . '/../Fixture/Definition/IsAbstract')->registerWith($factoryMuffin);
     }
@@ -68,8 +71,8 @@ final class DefinitionsTest extends Framework\TestCase
         $factoryMuffin = $this->createFactoryMuffinMock();
 
         $factoryMuffin
-            ->expects($this->never())
-            ->method($this->anything());
+            ->expects(self::never())
+            ->method(self::anything());
 
         Definitions::in(__DIR__ . '/../Fixture/Definition/PrivateConstructor')->registerWith($factoryMuffin);
     }
@@ -79,7 +82,7 @@ final class DefinitionsTest extends Framework\TestCase
         $factoryMuffin = $this->createFactoryMuffinMock();
 
         $factoryMuffin
-            ->expects($this->once())
+            ->expects(self::once())
             ->method('define');
 
         Definitions::in(__DIR__ . '/../Fixture/Definition/Acceptable')->registerWith($factoryMuffin);
@@ -90,8 +93,8 @@ final class DefinitionsTest extends Framework\TestCase
         $factoryMuffin = $this->createFactoryMuffinMock();
 
         $factoryMuffin
-            ->expects($this->never())
-            ->method($this->anything());
+            ->expects(self::never())
+            ->method(self::anything());
 
         $this->expectException(Exception\InvalidDefinition::class);
 

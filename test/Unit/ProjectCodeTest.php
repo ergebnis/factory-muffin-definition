@@ -17,6 +17,9 @@ use Localheinz\FactoryMuffin\Definition\Test\Fixture;
 use Localheinz\Test\Util\Helper;
 use PHPUnit\Framework;
 
+/**
+ * @internal
+ */
 final class ProjectCodeTest extends Framework\TestCase
 {
     use Helper;
