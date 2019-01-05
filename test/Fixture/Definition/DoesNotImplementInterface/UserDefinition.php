@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * Copyright (c) 2017 Andreas Möller.
+ * Copyright (c) 2017 Andreas Möller
  *
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
@@ -21,7 +21,7 @@ use Localheinz\FactoryMuffin\Definition\Test\Fixture\Entity;
  */
 final class UserDefinition
 {
-    public function accept(FactoryMuffin $factoryMuffin)
+    public function accept(FactoryMuffin $factoryMuffin): void
     {
         $factoryMuffin->define(Entity\User::class);
     }

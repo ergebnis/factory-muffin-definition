@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * Copyright (c) 2017 Andreas Möller.
+ * Copyright (c) 2017 Andreas Möller
  *
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
@@ -26,14 +26,14 @@ final class DefinitionsTest extends Framework\TestCase
 {
     use Helper;
 
-    public function testInRejectsNonExistentDirectory()
+    public function testInRejectsNonExistentDirectory(): void
     {
         $this->expectException(Exception\InvalidDirectory::class);
 
         Definitions::in(__DIR__ . '/../Fixture/Definition/NonExistentDirectory');
     }
 
-    public function testInIgnoresClassesWhichCanNotBeAutoloaded()
+    public function testInIgnoresClassesWhichCanNotBeAutoloaded(): void
     {
         $factoryMuffin = $this->createFactoryMuffinMock();
 
@@ -44,7 +44,7 @@ final class DefinitionsTest extends Framework\TestCase
         Definitions::in(__DIR__ . '/../Fixture/Definition/CanNotBeAutoloaded')->registerWith($factoryMuffin);
     }
 
-    public function testInIgnoresClassesWhichDoNotImplementProviderInterface()
+    public function testInIgnoresClassesWhichDoNotImplementProviderInterface(): void
     {
         $factoryMuffin = $this->createFactoryMuffinMock();
 
@@ -55,7 +55,7 @@ final class DefinitionsTest extends Framework\TestCase
         Definitions::in(__DIR__ . '/../Fixture/Definition/DoesNotImplementInterface')->registerWith($factoryMuffin);
     }
 
-    public function testInIgnoresClassesWhichAreAbstract()
+    public function testInIgnoresClassesWhichAreAbstract(): void
     {
         $factoryMuffin = $this->createFactoryMuffinMock();
 
@@ -66,7 +66,7 @@ final class DefinitionsTest extends Framework\TestCase
         Definitions::in(__DIR__ . '/../Fixture/Definition/IsAbstract')->registerWith($factoryMuffin);
     }
 
-    public function testInIgnoresClassesWhichHavePrivateConstructors()
+    public function testInIgnoresClassesWhichHavePrivateConstructors(): void
     {
         $factoryMuffin = $this->createFactoryMuffinMock();
 
@@ -77,7 +77,7 @@ final class DefinitionsTest extends Framework\TestCase
         Definitions::in(__DIR__ . '/../Fixture/Definition/PrivateConstructor')->registerWith($factoryMuffin);
     }
 
-    public function testInAcceptsClassesWhichAreAcceptable()
+    public function testInAcceptsClassesWhichAreAcceptable(): void
     {
         $factoryMuffin = $this->createFactoryMuffinMock();
 
@@ -88,7 +88,7 @@ final class DefinitionsTest extends Framework\TestCase
         Definitions::in(__DIR__ . '/../Fixture/Definition/Acceptable')->registerWith($factoryMuffin);
     }
 
-    public function testThrowsInvalidDefinitionExceptionIfInstantiatingDefinitionsThrowsException()
+    public function testThrowsInvalidDefinitionExceptionIfInstantiatingDefinitionsThrowsException(): void
     {
         $factoryMuffin = $this->createFactoryMuffinMock();
 
