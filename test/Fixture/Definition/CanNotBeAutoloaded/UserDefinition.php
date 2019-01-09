@@ -17,6 +17,10 @@ use League\FactoryMuffin\FactoryMuffin;
 use Localheinz\FactoryMuffin\Definition\Definition;
 use Localheinz\FactoryMuffin\Definition\Test\Fixture\Entity;
 
+final class UserDefinition
+{
+}
+
 /**
  * Is not acceptable as it can not be autoloaded (class name does not match file name).
  */
