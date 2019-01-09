@@ -18,6 +18,7 @@ use Localheinz\FactoryMuffin\Definition\Definitions;
 use Localheinz\FactoryMuffin\Definition\Exception;
 use Localheinz\Test\Util\Helper;
 use PHPUnit\Framework;
+use Prophecy\Argument;
 
 /**
  * @internal
@@ -35,77 +36,63 @@ final class DefinitionsTest extends Framework\TestCase
 
     public function testInIgnoresClassesWhichCanNotBeAutoloaded(): void
     {
-        $factoryMuffin = $this->createFactoryMuffinMock();
+        $factoryMuffin = $this->prophesize(FactoryMuffin::class);
 
         $factoryMuffin
-            ->expects(self::never())
-            ->method(self::anything());
+            ->define(Argument::any())
+            ->shouldNotBeCalled();
 
-        Definitions::in(__DIR__ . '/../Fixture/Definition/CanNotBeAutoloaded')->registerWith($factoryMuffin);
+        Definitions::in(__DIR__ . '/../Fixture/Definition/CanNotBeAutoloaded')->registerWith($factoryMuffin->reveal());
     }
 
     public function testInIgnoresClassesWhichDoNotImplementProviderInterface(): void
     {
-        $factoryMuffin = $this->createFactoryMuffinMock();
+        $factoryMuffin = $this->prophesize(FactoryMuffin::class);
 
         $factoryMuffin
-            ->expects(self::never())
-            ->method(self::anything());
+            ->define(Argument::any())
+            ->shouldNotBeCalled();
 
-        Definitions::in(__DIR__ . '/../Fixture/Definition/DoesNotImplementInterface')->registerWith($factoryMuffin);
+        Definitions::in(__DIR__ . '/../Fixture/Definition/DoesNotImplementInterface')->registerWith($factoryMuffin->reveal());
     }
 
     public function testInIgnoresClassesWhichAreAbstract(): void
     {
-        $factoryMuffin = $this->createFactoryMuffinMock();
+        $factoryMuffin = $this->prophesize(FactoryMuffin::class);
 
         $factoryMuffin
-            ->expects(self::never())
-            ->method(self::anything());
+            ->define(Argument::any())
+            ->shouldNotBeCalled();
 
-        Definitions::in(__DIR__ . '/../Fixture/Definition/IsAbstract')->registerWith($factoryMuffin);
+        Definitions::in(__DIR__ . '/../Fixture/Definition/IsAbstract')->registerWith($factoryMuffin->reveal());
     }
 
     public function testInIgnoresClassesWhichHavePrivateConstructors(): void
     {
-        $factoryMuffin = $this->createFactoryMuffinMock();
+        $factoryMuffin = $this->prophesize(FactoryMuffin::class);
 
         $factoryMuffin
-            ->expects(self::never())
-            ->method(self::anything());
+            ->define(Argument::any())
+            ->shouldNotBeCalled();
 
-        Definitions::in(__DIR__ . '/../Fixture/Definition/PrivateConstructor')->registerWith($factoryMuffin);
+        Definitions::in(__DIR__ . '/../Fixture/Definition/PrivateConstructor')->registerWith($factoryMuffin->reveal());
     }
 
     public function testInAcceptsClassesWhichAreAcceptable(): void
     {
-        $factoryMuffin = $this->createFactoryMuffinMock();
+        $factoryMuffin = $this->prophesize(FactoryMuffin::class);
 
         $factoryMuffin
-            ->expects(self::once())
-            ->method('define');
+            ->define(Argument::is('Foo'))
+            ->shouldBeCalled();
 
-        Definitions::in(__DIR__ . '/../Fixture/Definition/Acceptable')->registerWith($factoryMuffin);
+        Definitions::in(__DIR__ . '/../Fixture/Definition/Acceptable')->registerWith($factoryMuffin->reveal());
     }
 
     public function testThrowsInvalidDefinitionExceptionIfInstantiatingDefinitionsThrowsException(): void
     {
-        $factoryMuffin = $this->createFactoryMuffinMock();
-
-        $factoryMuffin
-            ->expects(self::never())
-            ->method(self::anything());
-
         $this->expectException(Exception\InvalidDefinition::class);
 
         Definitions::in(__DIR__ . '/../Fixture/Definition/ThrowsExceptionDuringConstruction');
-    }
-
-    /**
-     * @return FactoryMuffin|\PHPUnit_Framework_MockObject_MockObject
-     */
-    private function createFactoryMuffinMock()
-    {
-        return $this->createMock(FactoryMuffin::class);
     }
 }
