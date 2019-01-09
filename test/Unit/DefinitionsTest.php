@@ -34,17 +34,6 @@ final class DefinitionsTest extends Framework\TestCase
         Definitions::in(__DIR__ . '/../Fixture/Definition/NonExistentDirectory');
     }
 
-    public function testInIgnoresClassesWhichCanNotBeAutoloaded(): void
-    {
-        $factoryMuffin = $this->prophesize(FactoryMuffin::class);
-
-        $factoryMuffin
-            ->define(Argument::any())
-            ->shouldNotBeCalled();
-
-        Definitions::in(__DIR__ . '/../Fixture/Definition/CanNotBeAutoloaded')->registerWith($factoryMuffin->reveal());
-    }
-
     public function testInIgnoresClassesWhichDoNotImplementProviderInterface(): void
     {
         $factoryMuffin = $this->prophesize(FactoryMuffin::class);
