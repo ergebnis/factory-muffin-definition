@@ -1,8 +1,18 @@
 includes:
 	- vendor/jangregor/phpstan-prophecy/src/extension.neon
+	- vendor/localheinz/phpstan-rules/rules.neon
+	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
+	- vendor/phpstan/phpstan-strict-rules/rules.neon
+	- vendor/phpstan/phpstan/conf/bleedingEdge.neon
 	- vendor/phpstan/phpstan/conf/config.levelmax.neon
 
 parameters:
+	classesAllowedToBeExtended:
+		- RuntimeException
+		- InvalidArgumentException
+	ignoreErrors:
+		- '#Method Localheinz\\FactoryMuffin\\Definition\\Definition::accept\(\) has no return typehint specified\.#'
+	inferPrivatePropertyTypeFromConstructor: true
 	paths:
 		- src
 		- test

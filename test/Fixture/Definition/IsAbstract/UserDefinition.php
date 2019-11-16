@@ -22,7 +22,7 @@ use Localheinz\FactoryMuffin\Definition\Test\Fixture\Entity;
  */
 abstract class UserDefinition implements Definition
 {
-    public function accept(FactoryMuffin $factoryMuffin): void
+    final public function accept(FactoryMuffin $factoryMuffin): void
     {
         $factoryMuffin->define(Entity\User::class);
     }
