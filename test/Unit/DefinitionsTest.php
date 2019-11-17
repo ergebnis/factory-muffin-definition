@@ -22,6 +22,11 @@ use Prophecy\Argument;
 
 /**
  * @internal
+ *
+ * @covers \Localheinz\FactoryMuffin\Definition\Definitions
+ *
+ * @uses \Localheinz\FactoryMuffin\Definition\Exception\InvalidDefinition
+ * @uses \Localheinz\FactoryMuffin\Definition\Exception\InvalidDirectory
  */
 final class DefinitionsTest extends Framework\TestCase
 {
