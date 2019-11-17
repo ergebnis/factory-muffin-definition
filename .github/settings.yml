@@ -49,11 +49,11 @@ repository:
   allow_rebase_merge: false
   allow_squash_merge: false
   default_branch: master
-  description: ":octocat: + :ledger: Provides a GitHub repository template for a PHP library, using GitHub actions."
+  description: ":girl: Provides an interface for, and an easy way to find and register entity definitions for league/factory-muffin."
   has_downloads: true
   has_issues: true
   has_pages: false
   has_projects: false
   has_wiki: false
-  name: php-library-template
+  name: factory-muffin-definition
   private: false
