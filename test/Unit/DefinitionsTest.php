@@ -13,10 +13,10 @@ declare(strict_types=1);
 
 namespace Localheinz\FactoryMuffin\Definition\Test\Unit;
 
+use Ergebnis\Test\Util\Helper;
 use League\FactoryMuffin\FactoryMuffin;
 use Localheinz\FactoryMuffin\Definition\Definitions;
 use Localheinz\FactoryMuffin\Definition\Exception;
-use Localheinz\Test\Util\Helper;
 use PHPUnit\Framework;
 use Prophecy\Argument;
 
