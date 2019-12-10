@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace Localheinz\FactoryMuffin\Definition;
 
+use Ergebnis\Classy;
 use League\FactoryMuffin\FactoryMuffin;
-use Localheinz\Classy;
 
 final class Definitions
 {
