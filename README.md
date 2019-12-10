@@ -33,7 +33,7 @@ use League\FactoryMuffin\FactoryMuffin;
 
 final class UserDefinition implements Definition
 {
-    public function accept(FactoryMuffin $factoryMuffin)
+    public function accept(FactoryMuffin $factoryMuffin): void
     {
         $factoryMuffin->define(Entity\User::class)->setDefinitions([
             // ...
