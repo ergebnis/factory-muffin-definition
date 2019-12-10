@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fba770f2f45f2a4d50ef96521e6f7c53",
+    "content-hash": "d1c36d7b2bc9b0519941fd8cd7065ae5",
     "packages": [
         {
             "name": "ergebnis/classy",
@@ -56,6 +56,70 @@
             "description": "Provides a way to collect classy constructs from source or a directory.",
             "homepage": "https://github.com/ergebnis/classy",
             "time": "2019-12-05T22:45:51+00:00"
+        },
+        {
+            "name": "league/factory-muffin",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/factory-muffin.git",
+                "reference": "bfb82fed0659c7bd8b91724d1503b6a5864fe12d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/factory-muffin/zipball/bfb82fed0659c7bd8b91724d1503b6a5864fe12d",
+                "reference": "bfb82fed0659c7bd8b91724d1503b6a5864fe12d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "replace": {
+                "zizaco/factory-muff": "self.version"
+            },
+            "require-dev": {
+                "doctrine/orm": "2.5.*",
+                "illuminate/database": "5.0.*|5.1.*",
+                "league/factory-muffin-faker": "^2.0",
+                "phpunit/phpunit": "^4.8|^5.0"
+            },
+            "suggest": {
+                "doctrine/orm": "Factory Muffin supports doctrine through the repository store.",
+                "illuminate/database": "Factory Muffin supports eloquent through the model store.",
+                "league/factory-muffin-faker": "Factory Muffin is very powerful together with faker."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\FactoryMuffin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                },
+                {
+                    "name": "Scott Robertson",
+                    "email": "scottymeuk@gmail.com"
+                }
+            ],
+            "description": "The goal of this package is to enable the rapid creation of objects for the purpose of testing.",
+            "homepage": "http://factory-muffin.thephpleague.com/",
+            "keywords": [
+                "factory",
+                "testing"
+            ],
+            "time": "2019-11-25T14:29:21+00:00"
         }
     ],
     "packages-dev": [
@@ -928,70 +992,6 @@
                 "schema"
             ],
             "time": "2019-09-25T14:49:45+00:00"
-        },
-        {
-            "name": "league/factory-muffin",
-            "version": "v3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/factory-muffin.git",
-                "reference": "316ed2bac70178567f995d877b831804c9c58d5a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/factory-muffin/zipball/316ed2bac70178567f995d877b831804c9c58d5a",
-                "reference": "316ed2bac70178567f995d877b831804c9c58d5a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "replace": {
-                "zizaco/factory-muff": "self.version"
-            },
-            "require-dev": {
-                "doctrine/orm": "2.5.*",
-                "illuminate/database": "5.0.*|5.1.*",
-                "league/factory-muffin-faker": "^2.0",
-                "phpunit/phpunit": "^4.8|^5.0"
-            },
-            "suggest": {
-                "doctrine/orm": "Factory Muffin supports doctrine through the repository store.",
-                "illuminate/database": "Factory Muffin supports eloquent through the model store.",
-                "league/factory-muffin-faker": "Factory Muffin is very powerful together with faker."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\FactoryMuffin\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Scott Robertson",
-                    "email": "scottymeuk@gmail.com"
-                },
-                {
-                    "name": "Graham Campbell",
-                    "email": "graham@alt-three.com"
-                }
-            ],
-            "description": "The goal of this package is to enable the rapid creation of objects for the purpose of testing.",
-            "homepage": "http://factory-muffin.thephpleague.com/",
-            "keywords": [
-                "factory",
-                "testing"
-            ],
-            "time": "2016-05-13T10:56:41+00:00"
         },
         {
             "name": "localheinz/composer-json-normalizer",
