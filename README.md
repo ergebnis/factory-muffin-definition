@@ -1,27 +1,81 @@
-# php-library-template
+# factory-muffin-definition
 
-[![Continuous Integration](https://github.com/localheinz/php-library-template/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/php-library-template/actions)
-[![codecov](https://codecov.io/gh/localheinz/php-library-template/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/php-library-template)
-[![Latest Stable Version](https://poser.pugx.org/localheinz/php-library-template/v/stable)](https://packagist.org/packages/localheinz/php-library-template)
-[![Total Downloads](https://poser.pugx.org/localheinz/php-library-template/downloads)](https://packagist.org/packages/localheinz/php-library-template)
+[![Continuous Integration](https://github.com/localheinz/factory-muffin-definition/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/factory-muffin-definition/actions)
+[![Code Coverage](https://codecov.io/gh/localheinz/factory-muffin-definition/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/factory-muffin-definition)
+[![Latest Stable Version](https://poser.pugx.org/localheinz/factory-muffin-definition/v/stable)](https://packagist.org/packages/localheinz/factory-muffin-definition)
+[![Total Downloads](https://poser.pugx.org/localheinz/factory-muffin-definition/downloads)](https://packagist.org/packages/localheinz/factory-muffin-definition)
+
+Inspired by [`ergebnis/factory-girl-definition`](https://github.com/ergebnis/factory-girl-definition), this provides an interface for, and an easy way to find and register entity definitions for [`league/factory-muffin`](https://github.com/thephpleague/factory-muffin).
 
 ## Installation
-
-:bulb: This is a great place for showing how to install the package, see below:
 
 Run
 
 ```
-$ composer require localheinz/php-library-template
+$ composer require --dev localheinz/factory-muffin-definition
 ```
 
 ## Usage
 
-:bulb: This is a great place for showing a few usage examples!
+### Create Definitions
 
-## Changelog
+Implement the `Definition` interface and use the instance of `League\FactoryMuffin\FactoryMuffin`
+that is passed in into `accept()` to define entities:
 
-Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
+```php
+<?php
+
+namespace Foo\Bar\Test\Fixture\Entity;
+
+use Foo\Bar\Entity;
+use League\FactoryMuffin\FactoryMuffin;
+use Localheinz\FactoryMuffin\Definition\Definition;
+
+final class UserDefinition implements Definition
+{
+    public function accept(FactoryMuffin $factoryMuffin)
+    {
+        $factoryMuffin->define(Entity\User::class)->setDefinitions([
+            // ...
+        ]);
+    }
+}
+```
+
+:bulb: Any number of entities can be defined within a definition.
+However, it's probably a good idea to create a definition for each entity.
+
+### Register Definitions
+
+Lazily instantiate an instance of `League\FactoryMuffin\FactoryMuffin`
+and use `Definitions` to find definitions and register them with the factory:
+
+```php
+<?php
+
+namespace Foo\Bar\Test\Integration;
+
+use League\FactoryMuffin\FactoryMuffin;
+use League\FactoryMuffin\Stores;
+use Localheinz\FactoryMuffin\Definition\Definitions;
+use PHPUnit\Framework;
+
+abstract class AbstractIntegrationTestCase extends Framework\TestCase
+{
+    final protected function factoryMuffin(): FactoryMuffin
+    {
+        static $factoryMuffin = null;
+
+        if (null === $factoryMuffin) {
+            $factoryMuffin = new FactoryMuffin(new Stores\ModelStore('save'));
+
+            Definitions::in(__DIR__ . '/../Fixture')->registerWith($factoryMuffin);
+        }
+
+        return $factoryMuffin;
+    }
+}
+```
 
 ## Contributing
 
