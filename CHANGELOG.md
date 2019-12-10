@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`1.1.0...master`][1.1.0...master].
 
+### Changed
+
+* Required `league/factory-muffin` ([#49]), by [@localheinz]
+
 ## [`1.1.0`][1.1.0]
 
 For a full diff see [`1.0.0...1.1.0`][1.0.0...1.1.0].
@@ -28,5 +32,6 @@ For a full diff see [`5d218c3...1.0.0`][5d218c3...1.0.0].
 [1.1.0...master]: https://github.com/localheinz/factory-muffin-definition/compare/1.1.0...master
 
 [#1]: https://github.com/localheinz/factory-muffin-definition/pull/1
+[#49]: https://github.com/localheinz/factory-muffin-definition/pull/49
 
 [@localheinz]: https://github.com/localheinz
