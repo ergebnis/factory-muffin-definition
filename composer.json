@@ -1,8 +1,8 @@
 {
-  "name": "localheinz/factory-muffin-definition",
+  "name": "ergebnis/factory-muffin-definition",
   "type": "library",
   "description": "Provides an interface for, and an easy way to find and register entity definitions for league/factory-muffin.",
-  "homepage": "https://github.com/localheinz/factory-muffin-definition",
+  "homepage": "https://github.com/ergebnis/factory-muffin-definition",
   "license": "MIT",
   "authors": [
     {
@@ -14,6 +14,9 @@
     "php": "^7.2",
     "ergebnis/classy": "~0.5.0",
     "league/factory-muffin": "^3.0.1"
+  },
+  "replace": {
+    "localheinz/factory-muffin-definition": "*"
   },
   "require-dev": {
     "ergebnis/php-cs-fixer-config": "~1.0.0",
@@ -34,16 +37,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Localheinz\\FactoryMuffin\\Definition\\": "src/"
+      "Ergebnis\\FactoryMuffin\\Definition\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Localheinz\\FactoryMuffin\\Definition\\Test\\": "test/"
+      "Ergebnis\\FactoryMuffin\\Definition\\Test\\": "test/"
     }
   },
   "support": {
-    "issues": "https://github.com/localheinz/factory-muffin-definition/issues",
-    "source": "https://github.com/localheinz/factory-muffin-definition"
+    "issues": "https://github.com/ergebnis/factory-muffin-definition/issues",
+    "source": "https://github.com/ergebnis/factory-muffin-definition"
   }
 }

@@ -8,10 +8,10 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/factory-muffin-definition
+ * @see https://github.com/ergebnis/factory-muffin-definition
  */
 
-namespace Localheinz\FactoryMuffin\Definition;
+namespace Ergebnis\FactoryMuffin\Definition;
 
 use Ergebnis\Classy;
 use League\FactoryMuffin\FactoryMuffin;

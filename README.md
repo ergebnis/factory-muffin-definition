@@ -1,9 +1,9 @@
 # factory-muffin-definition
 
-[![Continuous Integration](https://github.com/localheinz/factory-muffin-definition/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/factory-muffin-definition/actions)
-[![Code Coverage](https://codecov.io/gh/localheinz/factory-muffin-definition/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/factory-muffin-definition)
-[![Latest Stable Version](https://poser.pugx.org/localheinz/factory-muffin-definition/v/stable)](https://packagist.org/packages/localheinz/factory-muffin-definition)
-[![Total Downloads](https://poser.pugx.org/localheinz/factory-muffin-definition/downloads)](https://packagist.org/packages/localheinz/factory-muffin-definition)
+[![Continuous Integration](https://github.com/ergebnis/factory-muffin-definition/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/factory-muffin-definition/actions)
+[![Code Coverage](https://codecov.io/gh/ergebnis/factory-muffin-definition/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/factory-muffin-definition)
+[![Latest Stable Version](https://poser.pugx.org/ergebnis/factory-muffin-definition/v/stable)](https://packagist.org/packages/ergebnis/factory-muffin-definition)
+[![Total Downloads](https://poser.pugx.org/ergebnis/factory-muffin-definition/downloads)](https://packagist.org/packages/ergebnis/factory-muffin-definition)
 
 Inspired by [`ergebnis/factory-girl-definition`](https://github.com/ergebnis/factory-girl-definition), this provides an interface for, and an easy way to find and register entity definitions for [`league/factory-muffin`](https://github.com/thephpleague/factory-muffin).
 
@@ -12,7 +12,7 @@ Inspired by [`ergebnis/factory-girl-definition`](https://github.com/ergebnis/fac
 Run
 
 ```
-$ composer require --dev localheinz/factory-muffin-definition
+$ composer require --dev ergebnis/factory-muffin-definition
 ```
 
 ## Usage
@@ -27,9 +27,9 @@ that is passed in into `accept()` to define entities:
 
 namespace Foo\Bar\Test\Fixture\Entity;
 
+use Ergebnis\FactoryMuffin\Definition\Definition;
 use Foo\Bar\Entity;
 use League\FactoryMuffin\FactoryMuffin;
-use Localheinz\FactoryMuffin\Definition\Definition;
 
 final class UserDefinition implements Definition
 {
@@ -55,9 +55,9 @@ and use `Definitions` to find definitions and register them with the factory:
 
 namespace Foo\Bar\Test\Integration;
 
+use Ergebnis\FactoryMuffin\Definition\Definitions;
 use League\FactoryMuffin\FactoryMuffin;
 use League\FactoryMuffin\Stores;
-use Localheinz\FactoryMuffin\Definition\Definitions;
 use PHPUnit\Framework;
 
 abstract class AbstractIntegrationTestCase extends Framework\TestCase

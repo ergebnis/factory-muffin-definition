@@ -8,19 +8,19 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/factory-muffin-definition
+ * @see https://github.com/ergebnis/factory-muffin-definition
  */
 
-namespace Localheinz\FactoryMuffin\Definition\Test\Unit\Exception;
+namespace Ergebnis\FactoryMuffin\Definition\Test\Unit\Exception;
 
+use Ergebnis\FactoryMuffin\Definition\Exception;
 use Ergebnis\Test\Util\Helper;
-use Localheinz\FactoryMuffin\Definition\Exception;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Localheinz\FactoryMuffin\Definition\Exception\InvalidDefinition
+ * @covers \Ergebnis\FactoryMuffin\Definition\Exception\InvalidDefinition
  */
 final class InvalidDefinitionTest extends Framework\TestCase
 {
