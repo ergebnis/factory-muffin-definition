@@ -8,25 +8,25 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/factory-muffin-definition
+ * @see https://github.com/ergebnis/factory-muffin-definition
  */
 
-namespace Localheinz\FactoryMuffin\Definition\Test\Unit;
+namespace Ergebnis\FactoryMuffin\Definition\Test\Unit;
 
+use Ergebnis\FactoryMuffin\Definition\Definitions;
+use Ergebnis\FactoryMuffin\Definition\Exception;
 use Ergebnis\Test\Util\Helper;
 use League\FactoryMuffin\FactoryMuffin;
-use Localheinz\FactoryMuffin\Definition\Definitions;
-use Localheinz\FactoryMuffin\Definition\Exception;
 use PHPUnit\Framework;
 use Prophecy\Argument;
 
 /**
  * @internal
  *
- * @covers \Localheinz\FactoryMuffin\Definition\Definitions
+ * @covers \Ergebnis\FactoryMuffin\Definition\Definitions
  *
- * @uses \Localheinz\FactoryMuffin\Definition\Exception\InvalidDefinition
- * @uses \Localheinz\FactoryMuffin\Definition\Exception\InvalidDirectory
+ * @uses \Ergebnis\FactoryMuffin\Definition\Exception\InvalidDefinition
+ * @uses \Ergebnis\FactoryMuffin\Definition\Exception\InvalidDirectory
  */
 final class DefinitionsTest extends Framework\TestCase
 {

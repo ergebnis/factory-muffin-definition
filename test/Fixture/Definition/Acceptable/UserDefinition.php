@@ -8,13 +8,13 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/factory-muffin-definition
+ * @see https://github.com/ergebnis/factory-muffin-definition
  */
 
-namespace Localheinz\FactoryMuffin\Definition\Test\Fixture\Definition\Acceptable;
+namespace Ergebnis\FactoryMuffin\Definition\Test\Fixture\Definition\Acceptable;
 
+use Ergebnis\FactoryMuffin\Definition\Definition;
 use League\FactoryMuffin\FactoryMuffin;
-use Localheinz\FactoryMuffin\Definition\Definition;
 
 /**
  * Is acceptable as it implements the interface.
