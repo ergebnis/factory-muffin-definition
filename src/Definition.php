@@ -17,5 +17,5 @@ use League\FactoryMuffin\FactoryMuffin;
 
 interface Definition
 {
-    public function accept(FactoryMuffin $factoryMuffin);
+    public function accept(FactoryMuffin $factoryMuffin): void;
 }
