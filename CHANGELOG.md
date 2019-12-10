@@ -11,6 +11,7 @@ For a full diff see [`1.1.0...master`][1.1.0...master].
 ### Changed
 
 * Required `league/factory-muffin` ([#49]), by [@localheinz]
+* Added return type declarations ([#50]), by [@localheinz]
 
 ## [`1.1.0`][1.1.0]
 
@@ -33,5 +34,6 @@ For a full diff see [`5d218c3...1.0.0`][5d218c3...1.0.0].
 
 [#1]: https://github.com/localheinz/factory-muffin-definition/pull/1
 [#49]: https://github.com/localheinz/factory-muffin-definition/pull/49
+[#50]: https://github.com/localheinz/factory-muffin-definition/pull/50
 
 [@localheinz]: https://github.com/localheinz
