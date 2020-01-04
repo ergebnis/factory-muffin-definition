@@ -48,6 +48,7 @@ final class Definitions
         $constructs = Classy\Constructs::fromDirectory($directory);
 
         foreach ($constructs as $construct) {
+            /** @var class-string $className */
             $className = $construct->name();
 
             try {
