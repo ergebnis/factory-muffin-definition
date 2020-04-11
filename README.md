@@ -1,7 +1,9 @@
 # factory-muffin-definition
 
-[![Continuous Deployment](https://github.com/ergebnis/factory-muffin-definition/workflows/Continuous%20Deployment/badge.svg)](https://github.com/ergebnis/factory-muffin-definition/actions)
-[![Continuous Integration](https://github.com/ergebnis/factory-muffin-definition/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/factory-muffin-definition/actions)
+[![Integrate](https://github.com/ergebnis/factory-muffin-definition/workflows/Integrate/badge.svg?branch=master)](https://github.com/ergebnis/factory-muffin-definition/actions)
+[![Prune](https://github.com/ergebnis/factory-muffin-definition/workflows/Prune/badge.svg?branch=master)](https://github.com/ergebnis/factory-muffin-definition/actions)
+[![Release](https://github.com/ergebnis/factory-muffin-definition/workflows/Release/badge.svg?branch=master)](https://github.com/ergebnis/factory-muffin-definition/actions)
+[![Renew](https://github.com/ergebnis/factory-muffin-definition/workflows/Renew/badge.svg?branch=master)](https://github.com/ergebnis/factory-muffin-definition/actions)
 
 [![Code Coverage](https://codecov.io/gh/ergebnis/factory-muffin-definition/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/factory-muffin-definition)
 [![Type Coverage](https://shepherd.dev/github/ergebnis/factory-muffin-definition/coverage.svg)](https://shepherd.dev/github/ergebnis/factory-muffin-definition)
@@ -9,7 +11,7 @@
 [![Latest Stable Version](https://poser.pugx.org/ergebnis/factory-muffin-definition/v/stable)](https://packagist.org/packages/ergebnis/factory-muffin-definition)
 [![Total Downloads](https://poser.pugx.org/ergebnis/factory-muffin-definition/downloads)](https://packagist.org/packages/ergebnis/factory-muffin-definition)
 
-Inspired by [`ergebnis/factory-girl-definition`](https://github.com/ergebnis/factory-girl-definition), this provides an interface for, and an easy way to find and register entity definitions for [`league/factory-muffin`](https://github.com/thephpleague/factory-muffin).
+Provides an interface for, and an easy way to find and register entity definitions for [`league/factory-muffin`](https://github.com/thephpleague/factory-muffin), inspired by [`ergebnis/factory-girl-definition`](https://github.com/ergebnis/factory-girl-definition).
 
 ## Installation
 
@@ -91,4 +93,6 @@ Please have a look at [`CODE_OF_CONDUCT.md`](https://github.com/ergebnis/.github
 
 ## License
 
-This package is licensed using the [MIT License](LICENSE.md).
+This package is licensed using the MIT License.
+
+Please have a look at [`LICENSE.md`](LICENSE.md).
