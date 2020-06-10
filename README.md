@@ -1,11 +1,11 @@
 # factory-muffin-definition
 
-[![Integrate](https://github.com/ergebnis/factory-muffin-definition/workflows/Integrate/badge.svg?branch=master)](https://github.com/ergebnis/factory-muffin-definition/actions)
-[![Prune](https://github.com/ergebnis/factory-muffin-definition/workflows/Prune/badge.svg?branch=master)](https://github.com/ergebnis/factory-muffin-definition/actions)
-[![Release](https://github.com/ergebnis/factory-muffin-definition/workflows/Release/badge.svg?branch=master)](https://github.com/ergebnis/factory-muffin-definition/actions)
-[![Renew](https://github.com/ergebnis/factory-muffin-definition/workflows/Renew/badge.svg?branch=master)](https://github.com/ergebnis/factory-muffin-definition/actions)
+[![Integrate](https://github.com/ergebnis/factory-muffin-definition/workflows/Integrate/badge.svg?branch=main)](https://github.com/ergebnis/factory-muffin-definition/actions)
+[![Prune](https://github.com/ergebnis/factory-muffin-definition/workflows/Prune/badge.svg?branch=main)](https://github.com/ergebnis/factory-muffin-definition/actions)
+[![Release](https://github.com/ergebnis/factory-muffin-definition/workflows/Release/badge.svg?branch=main)](https://github.com/ergebnis/factory-muffin-definition/actions)
+[![Renew](https://github.com/ergebnis/factory-muffin-definition/workflows/Renew/badge.svg?branch=main)](https://github.com/ergebnis/factory-muffin-definition/actions)
 
-[![Code Coverage](https://codecov.io/gh/ergebnis/factory-muffin-definition/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/factory-muffin-definition)
+[![Code Coverage](https://codecov.io/gh/ergebnis/factory-muffin-definition/branch/main/graph/badge.svg)](https://codecov.io/gh/ergebnis/factory-muffin-definition)
 [![Type Coverage](https://shepherd.dev/github/ergebnis/factory-muffin-definition/coverage.svg)](https://shepherd.dev/github/ergebnis/factory-muffin-definition)
 
 [![Latest Stable Version](https://poser.pugx.org/ergebnis/factory-muffin-definition/v/stable)](https://packagist.org/packages/ergebnis/factory-muffin-definition)
@@ -89,7 +89,7 @@ Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
 
 ## Code of Conduct
 
-Please have a look at [`CODE_OF_CONDUCT.md`](https://github.com/ergebnis/.github/blob/master/CODE_OF_CONDUCT.md).
+Please have a look at [`CODE_OF_CONDUCT.md`](https://github.com/ergebnis/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 

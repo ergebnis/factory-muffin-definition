@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.0.0...master`][2.0.0...master].
+For a full diff see [`2.0.0...main`][2.0.0...main].
 
 ## [`2.0.0`][2.0.0]
 
@@ -67,7 +67,7 @@ For a full diff see [`5d218c3...1.0.0`][5d218c3...1.0.0].
 [5d218c3...1.0.0]: https://github.com/ergebnis/factory-muffin-definition/compare/5d218c3...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/factory-muffin-definition/compare/1.0.0...1.1.0
 [1.1.0...2.0.0]: https://github.com/ergebnis/factory-muffin-definition/compare/1.1.0...2.0.0
-[2.0.0...master]: https://github.com/ergebnis/factory-muffin-definition/compare/2.0.0...master
+[2.0.0...main]: https://github.com/ergebnis/factory-muffin-definition/compare/2.0.0...main
 
 [#1]: https://github.com/ergebnis/factory-muffin-definition/pull/1
 [#49]: https://github.com/ergebnis/factory-muffin-definition/pull/49
